@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--JAVASCRIPT-->
+    <script src="javascript/style.js" defer></script>
+
+</head>
+<body>
+
+    <div class="topo-container"><!--CORPO DO PROJETO-->
+
+        <!--CABEÇALHO-->
+        <header>
+            <h1>Avançando</h1>
+        </header>
+
+        <!--FORMULÁRIO DE ADIÇÃO DE TAREFA-->
+        <form id="topo-form"><!--FORMULÁRIO DE ADIÇÃO DA TAREFA-->
+            <p>Adicione a sua tarefa</p>
+            <div class="form-control">
+                <input type="text" id="topo-input" placeholder="Tarefa...">
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i><!--ICO DE ADIÇÃO-->
+                </button>
+            </div>        
+        </form>
+
+        <!--ÁREA DE EDIÇÃO-->
+        <form id="edit-form" class="hide">
+            <p>Edite sua tarefa</p>
+            <div class="form-control">
+                <input type="text" id="edit-input">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i><!--ICO DE EDIÇÃO-->
+                </button>
+            </div>
+            <button id="cancel-edit-btn">Cancelar</button>
+        </form>
+        
+
+        <!--CAMPO DE (BUSCA) E (FILTRO)-->
+        <div id="toolbar">
+
+            <!--CAMPO DE (BUSCA)-->
+            <div id="search">
+                <h4>Pesquisar</h4>
+                <form>
+                    <input id="search-input" type="text" placeholder="Buscar">
+                    <button id="arese-button">
+                        <i class="fa-solid fa-delete-left"></i><!--ICO DE APAGAR CONTEUDO DA BUSCA-->
+                    </button>
+                </form>
+            </div>
+
+            <!--FILTRO-->
+            <div id="filter">
+                <h4>Filtrar:</h4>
+                <select id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="all">Feitos</option>
+                    <option value="all">A fazer</option>
+                </select>
+            </div>
+
+        </div>
+      
+        
+
+        <!--TAREFAS PRONTAS (COMO EXEMPLO)-->
+        <div id="topo-list">
+
+            <!--TAREFA (EXEMPLO 1)-->
+            <div class="todo done">
+                
+                <h3>Estou fazendo alguma coisa...</h3>
+                <button class="finish-taf">
+                    <i class="fa-solid fa-check"></i><!--ICO DE CHECK-->
+                </button>
+                <button class="edit-taf">
+                    <i class="fa-solid fa-pen"></i><!--ICO DE EDITAR-->
+                </button>
+                <button class="delet-taf">
+                    <i class="fa-solid fa-xmark"></i><!--ICO DE DELETAR-->
+                </button>                
+            </div>
+
+                <!--TAREFA (EXEMPLO 2)-->
+            <div class="todo">
+
+                <h3>Reunião Próxima Semana</h3>
+                <button class="finish-taf">
+                    <i class="fa-solid fa-check"></i><!--ICO DE CHECK-->
+                </button>
+                <button class="edit-taf">
+                    <i class="fa-solid fa-pen"></i><!--ICO DE EDITAR-->
+                </button>
+                <button class="delet-taf">
+                    <i class="fa-solid fa-xmark"></i><!--ICO DE DELETAR-->
+                </button>
+            </div>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

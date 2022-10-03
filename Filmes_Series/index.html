@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+      
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/style.css">
+
+    <link rel="stylesheet" href="__MACOSX/footer.css">
+
+      
+    <script src="__MACOSX/js/script.js"></script>
+
+
+
+    
+  </head>
+      
+  <body>
+      
+    
+      
+      
+      <!--NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-danger"><!--navbar-expand-lg= Só aparece no tamanho LG, os tamanhos menores serão recolhidos/ navbar-light / bg-laght= altera o contraste de cores do NAVBAR..-->
+          
+        <div class="container">  
+            
+            <a class="navbar-brand" href="#">NetCine</a><!--Nome destaque ao lado do menú (Titulo).-->
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=#navbarSite><!--Botão para expandir o NAVBAR-->
+                  <span class="navbar-toggler-icon"></span><!--sinal do botão(símbolo).-->
+              </button>
+
+              
+
+              <div class="collapse navbar-collapse" id="navbarSite"><!--estrutura para criar uma lista-->
+
+                  <ul class="navbar-nav mr-auto"><!--Lista alinhada a direita-->
+                      
+                                            
+                      
+                      <li class="nav-item"><!--para indicar o item na lista-->
+                          <a class="nav-link" href="#">Ação</a><!--Criação e magnetização do item-->
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#" onclick="bandeja_filme()">Aventura</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Comédia</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Comédia Romántica</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Terror</a>
+                      </li>                 
+                       
+                      
+                  </ul>
+                  
+                  <ul class="navbar-nav ml-auto"><!--Outra lista alinhada a esquerda-->
+                      
+                      <li class="nav-item dropdown"><!--Indica a Estrutura de um Dropdown(Menu Interno)-->
+                          
+                          <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop"><!--Criação do botão de acionar o Dropdown-->
+                              Mais+                              
+                          </a>
+                          <div class="dropdown-menu">,<!--Estrutura do conteudo interno do Dropdown-->
+                              <!--Conteudo interno-->
+                              <a class="dropdown-item" href="#">Ficção Científica</a>
+                              <a class="dropdown-item" href="#">Aventura</a>
+                              <a class="dropdown-item" href="#">Drama</a>
+                              <a class="dropdown-item" href="#">Romance</a>
+                              <a class="dropdown-item" href="#">Guerra</a>
+                              <a class="dropdown-item" href="#">Antigos</a>
+                              <a class="dropdown-item" href="#">Época</a>
+                          </div>
+                          
+                      </li>
+                      
+                  </ul>
+                  
+                  <form class="form-inline"><!--Estrutura de um formulário de pesquisa-->
+                      <input class="form-control ml-2 mr-2" type="search" placeholder="Buscar..."><!--Espaço para entrada de dados-->
+                      <button class="btn btn-dark" type="submit">ok</button><!--Botão do formulário-->
+                  </form>
+                  
+              </div>          
+              
+        </div>
+          
+      </nav>
+      <!--NAVBAR-->
+      
+      
+      
+      <!--CAROUSEL-->
+      
+      <div id="carouselSite" class="carousel slide" data-ride="carousel"><!--Estrutura de slide do carousel-->
+          
+          
+          <!--INDICADORES DO SLIDE-->
+          
+          <ol class="carousel-indicators">
+              
+              <li data-target="#carouselSite" data-slide-to="0" class="active"><!--(data-target)=captura a ID do carousel. (data-slide-to)=Para indicar o primeiro slide. class(active)= Para ativar a indicação do slide.--></li>
+              
+              <li data-target="#carouselSite" data-slide-to="1"><!--(data-target)=captura a ID do carousel. (data-slide-to)=Para indicar o primeiro slide. class(active)= Para ativar a indicação do slide.--></li>
+              
+              <li data-target="#carouselSite" data-slide-to="2"><!--(data-target)=captura a ID do carousel. (data-slide-to)=Para indicar o primeiro slide.--></li>
+          
+          </ol>          
+          
+          <!--INDICADORES DO SLIDE-->
+          
+          
+          
+          
+          <div class="carousel-inner"><!--Compartimento interno do carousel-->
+              
+              
+                      
+              <div class="carousel-item active"><!--Compartimento de conteudo do carousel. class(active)=No primeiro slide para o carousel funcionar.-->
+                  
+                  
+                  
+                  <img src="img/Rei_leao.jpg" class="img-fluid d-block"><!--Conteudo do carousel. class(img-fluid)=Ocupa todo o espaço. class(d-block)=Para todas as resoluções.-->
+                  
+                                    
+                                  
+                  <div class="carousel-caption"><!--Estrutura de texto do carousel. (d-none d-md-block)=O texto vai sumir com o tamanho menor que MD-->
+                      
+                      <button class="btn btn-primary">ASSITIR AGORA</button>
+                      
+                      <h1 class="d-none d-md-block">Rei Leão</h1> <!--Cabeçalho do texto-->  
+                      
+                      <a class="d-none d-md-block">Ou selecione a categoria do filme desejado!</a>
+                      
+                  </div>
+                  
+                  
+              
+              </div>
+              
+              <div class="carousel-item"><!--Compartimento de conteudo do carousel-->
+                  
+                  <img src="img/star_war.jpg" class="img-fluid d-block"><!--Conteudo do carousel. class(img-fluid)=Ocupa todo o espaço. class(d-block)=Para todas as resoluções.-->
+                  
+                  <div class="carousel-caption "><!--Estrutura de texto do carousel. (d-none d-md-block)=O texto vai sumir com o tamanho menor que MD-->
+                      
+                      <button class="btn btn-primary">ASSITIR AGORA</button>
+                      
+                      <h3 class="d-none d-md-block">Star Wars: A Ascensão Skywalker</h3> <!--Cabeçalho do texto-->  
+                      
+                      <a class="d-none d-md-block">Ou selecione a categoria do filme desejado!</a>
+                      
+                  </div>
+              
+              </div>
+              
+              <div class="carousel-item"><!--Compartimento de conteudo do carousel-->
+                  
+                  <img src="img/O_Irlandes.jpg" class="img-fluid d-block"><!--Conteudo do carousel. class(img-fluid)=Ocupa todo o espaço. class(d-block)=Para todas as resoluções.-->
+                  
+                  <div class="carousel-caption"><!--Estrutura de texto do carousel. (d-none d-md-block)=O texto vai sumir com o tamanho menor que MD-->
+                      
+                      <button class="btn btn-primary">ASSITIR AGORA</button>
+                      
+                      <h1 class="d-none d-md-block">O Irlandes</h1> <!--Cabeçalho do texto-->  
+                      
+                      <a class="d-none d-md-block">Ou selecione a categoria do filme desejado!</a>
+                      
+                  </div>
+              
+              </div>
+              
+          </div>
+          
+          <!--BOTÕES DE RETROCEDER E AVANÇAR-->
+          
+          <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev"><!--class(carousel-control-prev)= Controle para retroceder o slide.-->
+              <span class="carousel-control-prev-icon"><!--icon do botão voltar--></span>
+              <span class="sr-only">Anterior</span>
+          </a>
+          
+          <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next"><!--class(carousel-control-prev)= Controle para o próximo slide.-->
+              
+              <span class="carousel-control-next-icon"><!--icon do botão próximo--></span>
+              <span class="sr-only">Próximo</span>
+              
+          </a>
+          
+          <!--BOTÕES DE RETROCEDER E AVANÇAR-->
+          
+      </div>
+      
+      
+      <!--CAROUSEL-->
+            
+      
+      <!--BANDEJA DE ATUALIZAÇÕES-->
+      
+      
+      <div class="band-atu">          
+                              
+          
+          <div class="grad-atu">
+              
+              <div class="grad-int">        
+                  
+                  
+                  <div class="ret-1">
+                      
+                      <p>Ultimos Lançamentos</p>
+
+                      <a href="#"><img src="img/A_Fera.jpg"></a>
+                      <a href="#"><img src="img/A_Fera.jpg"></a>
+                      <a href="#"><img src="img/A_Fera.jpg"></a>
+
+                  </div>
+              
+                  <div class="ret-1">
+                      
+                      <p>Filmes Mais Visitados</p>
+
+                      <a href="#"><img src="img//A_Fera.jpg"></a>
+                      <a href="#"><img src="img//A_Fera.jpg"></a>
+                      <a href="#"><img src="img/A_Fera.jpg"></a>
+
+                  </div>
+              
+                  <div class="ret-1">
+                      
+                      <p>Series Mais Visitadas</p>
+
+                      <a href="#"><img src="img/A_Fera.jpg"></a>
+                      <a href="#"><img src="img/A_Fera.jpg"></a>
+                      <a href="#"><img src="img/A_Fera.jpg"></a>
+
+                  </div>
+                  
+              </div>
+              
+              
+              
+          </div>
+
+
+          
+          <!--IFRAME-->
+
+          <iframe src="__MACOSX/catal.html"></iframe>
+
+
+          <!--IFRAME-->
+
+
+          
+      </div>
+      
+      
+      <!--BANDEJA DE ATUALIZAÇÕES-->
+      
+      
+      
+          
+      
+      <!--RODAPÉ-->
+
+      <footer class="rodape">
+
+
+
+
+
+        <article class="logo"> <!--Nome da Logo */-->
+
+
+            <div class="social">
+
+                <a href="#"><img class="social-int" src="__MACOSX/Icons/Facebook.svg"></a>
+                <a href="#"><img class="social-int" src="__MACOSX/Icons/Instagram.svg"></a>
+                <a href="#"><img class="social-int" src="__MACOSX/Icons/Youtube.svg"></a>
+
+            </div>
+
+            <h1 class="logo-int">Logo</h1>
+
+            
+
+        </article>
+
+        <aside class="dire-but"><!--Direitos e Botões-->
+
+            <div class="dire">
+
+                <p class="dire-int">Copyright 2020 | @Todos os Direito Reservados</p>
+
+            </div>
+
+            <header class="but-ini"><!--Botão Iniciar-->
+                <a class="but-int1" href="#"><div class="but-int2"><p>Início</p></div></a>
+            </header>
+
+
+            
+
+        </aside>
+        
+        
+       
+        
+
+        <label class="form"><!--Formulário de Pedidos-->
+
+            <form method="POST">
+
+                <input class="usuario" type="text" placeholder="Nome..."> <!--Nome-->
+                <input class="usuario" type="text" placeholder="Email..."> <!--Email-->
+                <textarea class="caixa" name="filme"></textarea> <!--Nome do Filme-->
+                <button class="but-form" type="submit" value="Enviar"> <a href="#">Fazer Pedido</a> </button><!--Botão-->
+
+            </form>
+
+        </label>
+
+
+    
+    
+
+
+        </footer>
+      
+      <!--RODAPÉ-->
+ 
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>

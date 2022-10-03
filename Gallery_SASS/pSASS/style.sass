@@ -1,0 +1,111 @@
+@use 'variable'
+@use 'mixins'
+
+*
+    font-family: 'Josefin Sans', sans-serif
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+body
+    background-color: variable.$bg-color
+    color: variable.$text-color
+
+    a
+        color: variable.$text-color
+        text-decoration: none
+        transition: .4s
+
+    ul
+        list-style: none
+
+.header //FORMATAÇÃO DA CLASS (header) NO TOPO
+    display: flex
+    justify-content: space-between
+    @include mixins.container   
+
+
+    
+    &-brand //FILHO DA TAG (header)
+        color: variable.$primary-color
+        font-size: 3rem
+        
+    &-navbar //FILHO DA TAG (header
+
+        ul //FORMATAÇÃO DA LISTA
+            height: 100%
+            @include mixins.flex-center
+
+            li //FORMATAÇÃO DA LISTA
+                margin: 0 1rem
+                text-transform: uppercase
+                font-size: .8rem
+
+                .active //DEFININDO A COR SECUNDARIA DEFINITIVAMENTE NO SELETOR (active)
+                    color: variable.$secondary-color
+
+                a //ADICIONANDO UM OFEITO (hover) NAS DEMAIS OPÇÕES DO MENU
+                    &:hover 
+                        color: variable.$secondary-color
+
+    &-social-media
+
+        ul
+            @include mixins.flex-center
+            height: 100%
+
+            li
+                margin: 0 1rem
+
+                a
+                    &:hover
+                        color: variable.$primary-color
+
+
+.gallery //FORMATAÇÃO DA TAG (gallery)
+    @include mixins.flex-center
+    @include mixins.container
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 0
+
+    &-card //FILHOS DA TAG (gallery)...
+        width: 31%
+        height: 400%
+        margin-bottom: 5%
+        
+        
+        &-title
+            font-size: 2rem
+            font-weight: 300
+            margin-bottom: 1rem
+
+        &-btn
+            padding: .6rem 2rem
+            border: 2px solid variable.$primary-color
+            color: variable.$primary-color
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 1px
+
+            &:hover
+                background-color: variable.$primary-color
+                color: variable.$bg-color
+
+    #card-1
+        @include mixins.bg-img('cavalo.jpg')
+
+    #card-2
+        @include mixins.bg-img('audi.jpg')
+
+    #card-3
+        @include mixins.bg-img('casa.jpg')
+
+    #card-4
+        @include mixins.bg-img('natureza.jpg')
+
+    #card-5
+        @include mixins.bg-img('pessoas.jpg')
+
+    #card-6
+        @include mixins.bg-img('pessoas.jpg')

@@ -1,0 +1,266 @@
+body{
+    border: 0;
+    margin: 0;
+}
+
+.rodape{
+    margin: auto;
+    border: 0;
+    height: 200px;
+    background-color: #2a2122;
+}
+
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100px;    
+    color: blanchedalmond;      
+}
+
+.logo-int{
+    
+    margin-top: 30px;
+}
+
+
+
+
+
+.social-int{
+    height: 40px;
+    display: flex;
+    align-items: center;    
+    flex-direction: row;
+
+}
+
+.social{  
+    left: 120px; 
+    position: absolute;     
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+
+
+.dire-but{    
+    
+    margin-left: auto;
+    margin-right: auto;    
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+.dire{
+    
+    text-align: center;    
+    height: 30px;      
+    border: 0;
+    width: 350px;
+    position: fixed;
+    position: absolute;
+    left: 10px;
+    margin-top: 25px;
+
+    
+}
+
+.dire-int{
+    width: 350px;      
+    color: white;
+}
+
+
+.but-ini{    
+    margin-top: 50px;
+    width: 90px;
+}
+
+.but-int1{
+    margin-top: -15px;    
+    border: #2196f3;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.but-int1:hover{    
+    text-decoration: none;
+    color: #000000;
+    background: #2196f3;
+    box-shadow: 0 0 10px #ff3d09, 0 0 40px #ff3d09, 0 0 80px #ff3d09;
+    border-radius: 25px;
+}
+
+
+.but-int2{    
+    width: 90px;
+    margin-top: 15px;
+}
+
+
+
+
+
+.form{
+    display: none;
+
+}
+
+
+
+
+/*RESPONSIVO MÓBILE*/
+
+@media only screen and (min-width: 320px) and (max-width: 504px){
+
+
+    body{
+        border: 0;
+        margin: 0;
+    }
+    
+    .rodape{
+        margin: auto;
+        border: 0;
+        height: 200px;
+        background-color: #2a2122;
+    }
+    
+    .logo{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100px;    
+        color: blanchedalmond;
+    }
+    
+    .logo-int{
+        margin: auto;
+    }
+    
+    
+    
+    
+    
+    .social-int{
+        margin-top: 5px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .social{  
+        margin-top:30px;
+        left: 30px;         
+        position: absolute;     
+        width: 50px;        
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-direction: column;
+    }
+    
+    
+    
+    .dire-but{        
+        margin-left: auto;
+        margin-right: auto;    
+        width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        flex-direction: row;        
+    }
+    
+    .dire{      
+        
+        text-align: center;    
+        height: 24px;      
+        border: 0;
+        width: 240px;                
+        position: absolute;        
+        margin-top: 95px;   
+        left: auto;
+        right: auto;     
+    }
+    
+    .dire-int{
+        position: absolute;
+        left: auto;
+        right: auto;
+        font-size: 10px;
+        width: 240px;
+        height: 24px;
+        color: white;
+    }
+    
+    
+    .but-ini{    
+        height: 20px;
+        margin-top: 30px;
+        width: 90px;
+    }
+    
+    .but-int1{
+        margin-top: -15px;    
+        border: #2196f3;
+        margin-bottom: 10px;
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        color: #2196f3;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        overflow: hidden;
+        transition: 0.2s;
+    }
+    
+    .but-int1:hover{    
+        text-decoration: none;
+        color: #000000;
+        background: #2196f3;
+        box-shadow: 0 0 10px #ff3d09, 0 0 40px #ff3d09, 0 0 80px #ff3d09;
+        border-radius: 25px;
+    }
+    
+    
+    .but-int2{        
+        width: 90px;
+        margin-top: 15px;
+    }
+    
+    
+    
+    
+    
+    .form{
+        display: none;
+    
+    }
+    
+    
+    
+    
+    
+}
