@@ -1,0 +1,240 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no" />
+	<title>Minha Página</title>
+	<link rel="stylesheet" type="text/css" href="css/portal.css">
+    <script type="text/javascript" src="js/script.js"> </script>
+</head>
+<body>
+	<div class="topo">
+        <div class="topoint">
+            
+            <div class="topomenu">
+                <ul>
+                    <li> <a href="">Home</a></li>
+                    <li> <a href="">Sobre</a></li>
+                    <li> <a href="">Anuncios</a></li>
+                    <li> <a href="">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="topobusca"> <! campo de busca>
+                <input class="busca" type="image" src="image/multimedia/png/busca.png" border="0" width="26px" height="26px"/>
+                <input class="topodebusca" type="text" name="busca" placeholder="Busca..." />
+                <a href=""> <img src="image/icon/png/rss.png" border="0" width="26px" height="26px"/> </a>
+                <a href=""> <img src="image/icon/png/instagram.png" border="0" width="26px" height="26px"/> </a>
+                <a href=""> <img src="image/icon/png/whatsapp.png" border="0" width="26px" height="26px"/> </a>
+                <a href=""> <img src="image/icon/png/twitter.png" border="0" width="26px" height="26px"/> </a>
+                <a href=""> <img src="image/icon/png/facebook.png" border="0" width="26px" height="26px"/> </a>               
+            </div>
+            
+        </div>
+    </div>
+    <div class="topo2">
+        
+        <div class="topoint2">
+            <div class="logo">
+                <img src="image/TC2_logoBlack.png" border="0" width="220px" />
+            </div>
+            <div class="banner"></div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menuint">
+            <img class="menumobile" onclick="toggleMenu()" src="image/multimedia/png/Menu.png" border="0" width="40px" height="40px"/>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Economia</a></li>
+            <li>
+                <a href="">Entretenimento</a>
+                <img src="image/multimedia/png/down.png" border="0" width="10px">
+                <div class="submenu">
+                    <a href="./"><div class="subm">SubM 1</div></a>
+                    <a href="./"><div class="subm">SubM 2</div></a>
+                    <a href="./"><div class="subm">SubM 3</div></a>
+                    <a href="./"><div class="subm">SubM 4</div></a>
+                    <a href="./"><div class="subm">SubM 5</div></a>
+                </div>
+            </li>
+            
+            <li>
+                <a href="">Esportes</a>
+                <img src="image/multimedia/png/down.png" boder="0" width="10px">
+                <div class="submenu">
+                    <a href="./"><div class="subm">SubM 1</div></a>
+                    <a href="./"><div class="subm">SubM 2</div></a>
+                    <a href="./"><div class="subm">SubM 3</div></a>
+                    <a href="./"><div class="subm">SubM 4</div></a>
+                    <a href="./"><div class="subm">SubM 5</div></a>
+                </div>
+            </li>
+            
+            <li><a href="">Geral</a></li>
+            
+            <li>
+                <a href="">Notícias</a>
+                <img src="image/multimedia/png/down.png" boder="0" width="10px">
+                <div class="submenu">
+                    <a href="./"><div class="subm">SubM 1</div></a>
+                    <a href="./"><div class="subm">SubM 2</div></a>
+                    <a href="./"><div class="subm">SubM 3</div></a>
+                    <a href="./"><div class="subm">SubM 4</div></a>
+                    <a href="./"><div class="subm">SubM 5</div></a>
+                </div>
+            </li>
+            
+            <li><a href="">Política</a></li>
+            <li><a href="">Vídeos</a></li>
+        </ul>
+        </div>       
+    </div>
+    <div class="ultimasnoticias">
+        <div class="ultimasnoticiasint">
+            <div class="noticiaint">
+                <div class="noticiaintvermelho">Ultimas Notícias</div>
+                <div class="noticiaintbranco">Notícias do dia apresentadas a baixo! Confira.</div>
+            </div>
+        </div>
+    </div>
+    <div class="conteiner">
+        <div class="conteinerint">
+            <div class="bannerleft">
+                <div class="slideshow" id="slideshow">
+                    <div class="slideshowarea">
+                        <div class="slide" style="background-image: url(image/TC2/TC2_Screenshots_ar.png)"> 
+                            <div class="slide_info">
+                                <div class="slide_info_title">title</div>
+                                <div class="slide_info_subtitle">subtitle</div>
+                            </div> 
+                        </div>
+                        <div class="slide" style="background-image: url(image/TC2/TC2_Screenshots_mot.png)"> 
+                            <div class="slide_info">
+                                <div class="slide_info_title">title</div>
+                                <div class="slide_info_subtitle">subtitle</div>
+                            </div> 
+                        </div>
+                        <div class="slide" style="background-image: url(image/TC2/TC2_Screenshots_car.png)"> 
+                            <div class="slide_info">
+                                <div class="slide_info_title">title</div>
+                                <div class="slide_info_subtitle">subtitle</div>
+                            </div> 
+                        </div>
+                        <div class="slide" style="background-image: url(image/TC2/TC2_Screenshots_bar.png)"> 
+                            <div class="slide_info">
+                                <div class="slide_info_title">title</div>
+                                <div class="slide_info_subtitle">subtitle</div>
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+                
+                <div class="widget">
+                    <div class="titulo">NOTÍCIAS</div>
+                    <div class="conteudo">
+                        <div class="noticia_left">
+                        <a href=""> <!.......................................................ADICIONE UM LINK!>
+                            <div class="noticia_right_int leftbig">
+                                <div class="noticia_right_img">
+                                    <img src="" border="0" width="80px" height="80px"/>
+                                </div>
+                                <div class="noticia_right_titulo">Titulo</div>
+                                <div class="noticia_right_info">The Crew 2</div>
+                            </div> 
+                        </a>
+                        </div>
+                        
+                        <div class="noticia_right">
+                        <a href=""> <!.......................................................ADICIONE UM LINK!>
+                            <div class="noticia_right_int">
+                                <div class="noticia_right_img">
+                                    <img src="" border="0" width="80px" height="80px"/>
+                                </div>
+                                <div class="noticia_right_titulo">Titulo</div>
+                                <div class="noticia_right_info">The Crew 2</div>
+                            </div>
+                        </a>
+                        <a href=""> <!.......................................................ADICIONE UM LINK!>
+                            <div class="noticia_right_int">
+                                <div class="noticia_right_img">
+                                    <img src="" border="0" width="80px" height="80px"/>
+                                </div>
+                                <div class="noticia_right_titulo">Titulo</div>
+                                <div class="noticia_right_info">The Crew 2</div>
+                            </div>
+                        </a>
+                        <a href=""> <!.......................................................ADICIONE UM LINK!>
+                            <div class="noticia_right_int">
+                                <div class="noticia_right_img">
+                                    <img src="" border="0" width="80px" height="80px"/>
+                                </div>
+                                <div class="noticia_right_titulo">Titulo</div>
+                                <div class="noticia_right_info">The Crew 2</div>
+                            </div>
+                        </a>
+                        <a href=""> <!.......................................................ADICIONE UM LINK!>
+                            <div class="noticia_right_int">
+                                <div class="noticia_right_img">
+                                    <img src="" border="0" width="80px" height="80px"/>
+                                </div>
+                                <div class="noticia_right_titulo">Titulo</div>
+                                <div class="noticia_right_info">The Crew 2</div>
+                            </div>
+                        </a>
+                        </div>
+                        
+                        <div style="clear: both"></div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="bannerright">
+                <div class="widget">
+                    <div class="titulo">SOCIAL</div>
+                    <div class="conteudo">
+                        <a href=""> <img src="image/icon/png/rss.png" border="0" width="26px" height="26px"/> </a>
+                        <a href=""> <img src="image/icon/png/instagram.png" border="0" width="26px" height="26px"/> </a>
+                        <a href=""> <img src="image/icon/png/whatsapp.png" border="0" width="26px" height="26px"/> </a>
+                        <a href=""> <img src="image/icon/png/twitter.png" border="0" width="26px" height="26px"/> </a>
+                        <a href=""> <img src="image/icon/png/facebook.png" border="0" width="26px" height="26px"/> </a>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="titulo">ÚLTIMAS NOTÍCIAS</div>
+                    <div class="conteudo">
+                        <div class="noticias_item">
+                            REVIVA E COMPARTILHE SUAS MANOBRAS MAIS LOUCAS COM O LIVE TRACK E O REPLAY LIVE NO THE CREW 2!
+                            <br/>
+                            <br/>
+                            <a href="./">SAIBA MAIS...</a>
+                        </div>
+                        <div class="noticias_item">
+                            BETA ABERTO CHEGANDO EM 21 DE JUNHO. BAIXE JÁ!
+                            <br/>
+                            <br/>
+                            <a href="./">SAIBA MAIS...</a>
+                        </div>
+                        <div class="noticias_item">
+                            NOSSO PLANO PARA O THE CREW® 2 APÓS O LANÇAMENTO!
+                            <br/>
+                            <br/>
+                            <a href="./">SAIBA MAIS...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="titulo">PUBLICIDADE</div>
+                    <div class="conteudo">
+                        <img src="image/cocnteudo_publicidade.png" border="0" width="275px" height="275px" />
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="titulo">ENCONTRE-NOS NO FACEBOOK</div>
+                    <div class="conteudo">...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
