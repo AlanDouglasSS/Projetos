@@ -1,5 +1,8 @@
 /*--FONTE GOOGLE*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
 
 
 /**/
@@ -249,15 +252,95 @@ main{
     
 }
 
+/*SOBRE A SEÇÃO INICIAL*/
+#about{
+    padding: 70px 30px;
+}
+
+/*CABEÇALHO GLOBAL*/
+.sub-heading{
+    color: black;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/*NOS VAMOS USAR ALGUNS DIVISORES EM TODA SEÇÃO*/
+
+/*TODA PARTE DO (SOBRE)*/
+.divider{
+    width: 80px;
+    height: 4px;
+    background-color: var(--themeBGColor);
+    border-radius: 3px;
+}
+#about .divider ~ p{
+    color: var(--textColor);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+#about .about-col{
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+#about .about-col .img-col{
+    flex-basis: 35%;
+    text-align: center;
+}
+
+#about .about-col .img-col img{
+    width: 100%;
+}
+
+#about .about-col .info-col{
+    flex-basis: 70%;
+}
+
+#about .about-col .info-col h2{
+    color: var(--themeBGColor);
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 0.5px;
+    margin-top: -10px;
+}
+
+#about .about-col .info-col p{
+    color: var(--textColor);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+}
+
+#about .about-col .info-col .icon-list-col{
+    display: flex;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+#about .about-col .info-col .icon-list-col .icon-list ul li{
+    list-style: none;
+    margin: 15px 0;
+}
+#about .about-col .info-col .icon-list-col .icon-list ul li i{
+    color: var(--themeBGColor);
+}
+
+#about .about-col .info-col .icon-list-col .icon-list ul li i strong{
+    color: var(--sideBGColor);
+    font-weight: 600;
+    margin-right: 2px;
+}
 
 
+/*MOBILE VIEW*/
 
-
-
-
-
-
-
+@media only screen and(max-width: 850px) {
+    
+}
 
 
 
