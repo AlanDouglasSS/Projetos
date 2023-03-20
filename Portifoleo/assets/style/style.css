@@ -20,7 +20,7 @@
     --sideBGColor: #040b14;
     --themeBGColor: #00A78E;
     --iconBGColor: #2C2F3F;
-    --textColor: #525252;
+    --textColor: #353535;
     --bgColor: #F7F7F7;
 }
 
@@ -246,18 +246,21 @@ main{
         font-size: 20px;
         font-weight: 400;
     }
-
-
-
     
+        
 }
 
-/*SOBRE A SEÇÃO INICIAL*/
+/*=============SOBRE A SEÇÃO INICIAL===========*/
+
 #about{
     padding: 70px 30px;
 }
 
-/*CABEÇALHO GLOBAL*/
+
+
+/*===========CABEÇALHO GLOBAL==========*/
+
+
 .sub-heading{
     color: black;
     font-size: 30px;
@@ -266,18 +269,21 @@ main{
 
 /*NOS VAMOS USAR ALGUNS DIVISORES EM TODA SEÇÃO*/
 
-/*TODA PARTE DO (SOBRE)*/
+/*===========TODA PARTE DO (SOBRE)==========*/
+
+
+
 .divider{
     width: 80px;
     height: 4px;
     background-color: var(--themeBGColor);
     border-radius: 3px;
 }
-#about .divider ~ p{
+.sub-para{
     color: var(--textColor);
     font-size: 15px;
     letter-spacing: 0.5px;
-    font-weight: 400;
+    font-weight: 500px;
     margin-top: 15px;
 }
 
@@ -335,16 +341,135 @@ main{
     margin-right: 2px;
 }
 
-
-/*MOBILE VIEW*/
-
-@media only screen and(max-width: 850px) {
-    
+#about .about-col .info-col .icon-list-col .icon-list ul li span{
+    color: var(--textColor);
+    font-weight: 500;
+    font-size: 15px;
 }
 
 
 
+/*=============MOBILE VIEW==============*/
+
+
+
+@media only screen and (max-width: 830px) {
+    #about{
+        padding: 50px 10px;
+    }
+    #about .divider ~ p{
+        font-size: 14px;
+        letter-spacing: 0px;
+        text-align: justify;
+    }
+
+    #about .about-col{
+        flex-direction: column;
+    }
+
+    #about .about-col .img-col img{
+        width: 50%;
+    }
+
+    #about .about-col .info-col h2{
+        font-weight: 600;
+        font-size: 25px;
+        letter-spacing: 0px;
+    }
+
+    #about .about-col .info-col p{
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+
+    #about .about-col .info-col .icon-list-col{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #about .about-col .info-col .icon-list-col .icon-list ul li{
+        margin: 10px 0;
+    }
+
+    #about .about-col .info-col .icon-list-col .icon-list ul li strong{
+        font-size: 200;
+        margin-right: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    #about .about-col .img-col img{
+        width: 90%;
+    }
+}
+
+
+/*=============ABOUT SEÇÃO FINAL===========*/
 
 
 
 
+/*===========FACTS SEÇÃO INICIAL=============*/
+
+#facts{
+    padding: 50px 30px;
+    background-color: white;
+}
+#facts .fact-row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+
+#facts .fact-row .fact-box i{
+    color: var(--themeBGColor);
+    font-size: 40px;
+}
+#facts .fact-row .fact-box strong{
+    color: var(--sideBGColor);
+    font-size: 30px;
+    margin-left: 5px;
+    font-weight: 600;
+}
+#facts .fact-row .fact-box p{
+    color: var(--textColor);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 700px){
+    #facts{
+        padding: 40px 15px;
+    }
+    #fact .fact-row{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    #facts .fact-row .fact-box i{
+        font-size: 27px;
+    }
+    #facts .fact-row .fact-box strong{
+        color: var(--sideBGColor);
+        font-size: 18px;        
+    }
+    #facts .fact-row .fact-box p{        
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+
+/*==============SEÇÃO FINAL DO FACTS==========*/
+
+/*-----------------------------------------------*/
+
+
+
+/*----------------------------------------------------------*/
+
+/*=========SKILLS SEÇÃO INICIAL======*/
